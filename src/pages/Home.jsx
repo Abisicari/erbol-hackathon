@@ -33,6 +33,7 @@ const Home = () => {
       >
         <Player
           autoPlay
+          playsinline
           loop
           muted
           // poster={video}
