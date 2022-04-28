@@ -29,6 +29,7 @@ export default class Responsive extends Component {
   render() {
     const settings = {
       dots: true,
+
       // scrollBy: true,
       infinite: false,
       speed: 1000,

@@ -1,8 +1,15 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../pagesCSS/About.css";
 import img1 from "../components/img/IMG_5483.png";
 import { margin } from "@mui/system";
 const About = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
+
   return (
     <div>
       {/* <

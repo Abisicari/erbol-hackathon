@@ -17,8 +17,12 @@ import Cart from "./pages/Cart";
 import Fav from "./pages/Fav";
 import Credit from "./pages/Credit";
 import ResetPass from "./pages/ResetPass";
+import { useAuth } from "./Contexts/AuthContextProvider";
+import RequireAuth from "./components/Auth/RequireAuth";
 
 const MyRoutes = () => {
+  const { currentUser } = useAuth();
+
   return (
     <Routes>
       <Route element={<MainLayouts />}>
@@ -26,11 +30,13 @@ const MyRoutes = () => {
         <Route path="/about" element={<About />} />
         <Route path="/fav" element={<Fav />} />
         <Route path="/forgotpass" element={<ResetPass />} />
-        <Route path="/admin" element={<Admin />}>
-          <Route index element={<List />} />
-          <Route path="add" element={<Add />} />
-          <Route path="edit/:id" element={<Edit />} />
-        </Route>
+        {currentUser.isAdmin && (
+          <Route path="/admin" element={<Admin />}>
+            <Route index element={<List />} />
+            <Route path="add" element={<Add />} />
+            <Route path="edit/:id" element={<Edit />} />
+          </Route>
+        )}
         <Route path="/products" element={<Products />} />
         <Route path="/products/detail/:prodId" element={<ProdDetail />} />
         <Route path="/register" element={<Register />} />

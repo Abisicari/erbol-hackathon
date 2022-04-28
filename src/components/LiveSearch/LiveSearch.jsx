@@ -62,11 +62,11 @@ const LiveSearch = () => {
         q: inpSearch,
       });
     }
-    setSearchParams({
-      ...currentParams,
-      _page: 1,
-      q: inpSearch,
-    });
+    // setSearchParams({
+    //   ...currentParams,
+    //   _page: 1,
+    //   q: inpSearch,
+    // });
   }, [inpSearch]);
 
   return (

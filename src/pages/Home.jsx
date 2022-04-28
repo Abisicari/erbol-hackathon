@@ -9,6 +9,12 @@ import CardCloth from "../components/CardCloth/CardCloth";
 import { Link } from "react-router-dom";
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div>
       {/* <div className="typewriter"> */}

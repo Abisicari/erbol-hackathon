@@ -115,7 +115,7 @@ export default function OneProduct({ item }) {
             </IconButton>
           ) : (
             <IconButton>
-              <FavoriteIcon onClick={() => navigate("/login")} />{" "}
+              <FavoriteIcon onClick={() => navigate("/login")} />
               {item.like.length}
             </IconButton>
           )}
