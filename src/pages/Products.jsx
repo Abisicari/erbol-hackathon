@@ -1,9 +1,15 @@
 import { Container } from "@mui/material";
-import React from "react";
+import React, { useEffect } from "react";
 import ProdList from "../components/Products/ProdList/ProdList";
 import "../pagesCSS/Products.css";
 
 const Products = () => {
+  useEffect(() => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  }, []);
   return (
     <div className="products back-img">
       <Container maxWidth="lg">
