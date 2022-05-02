@@ -6,6 +6,10 @@ import Typography from "@mui/material/Typography";
 import { CardActionArea } from "@mui/material";
 import "./CardCloth.css";
 import { Link } from "react-router-dom";
+import bal1 from "../img/bal1.jpeg";
+import bal2 from "../img/bal2.jpeg";
+import bal3 from "../img/bal3.jpeg";
+import bal4 from "../img/bal4.jpeg";
 
 export default function ActionAreaCard() {
   return (
@@ -30,14 +34,14 @@ export default function ActionAreaCard() {
             className="card-img"
             component="img"
             height="500"
-            image="https://balenciaga.dam.kering.com/m/5de17dc2191210b0/Large-6570274B8B51000_F.jpg?v=1"
+            image={bal1}
             alt="t-shirt"
           />
           <CardMedia
             className="img-hide card-img"
             component="img"
             height="500"
-            image="https://balenciaga.dam.kering.com/m/e1ff429658cfedf/eCom-6570274B8B51000_G.jpg?v=1"
+            image={bal2}
             alt="t-shirt"
           />
           <CardContent>
@@ -63,14 +67,14 @@ export default function ActionAreaCard() {
             className="card-img"
             component="img"
             height="500"
-            image="https://balenciaga.dam.kering.com/m/29b3e25b8ac48c37/Large-697879TMV891055_F.jpg?v=1"
+            image={bal3}
             alt="t-shirt"
           />
           <CardMedia
             className="img-hide card-img"
             component="img"
             height="500"
-            image="https://balenciaga.dam.kering.com/m/5002903d7b06dbb4/Large-697879TMV891055_G.jpg?v=1"
+            image={bal4}
             alt="t-shirt"
           />
           <CardContent>
